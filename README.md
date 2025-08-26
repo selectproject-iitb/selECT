@@ -59,11 +59,9 @@ git clone https://github.com/selectproject-iitb/selECT
    npm run dev
    ```
 
----
-
 ## Additional Information
 
-* **Frontend:** ReactJS
+* **Frontend:** ReactJS with tailwind css
 * **Backend:** Node.js with Socket.IO and MongoDB
 * **Admin Panel:** Access via
 
