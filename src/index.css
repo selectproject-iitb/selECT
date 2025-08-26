@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #2a2a2a;
+  background-color: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-break {
+    page-break-before: always;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .bg-primary,
+  .bg-secondary,
+  .bg-accent,
+  .bg-success,
+  .bg-warning,
+  .bg-error,
+  .bg-light-bg {
+    background: none !important;
+    color: black !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .bg-primary,
+  .bg-secondary {
+    background-color: #000000 !important;
+  }
+
+  .text-primary,
+  .text-secondary {
+    color: #000000 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
