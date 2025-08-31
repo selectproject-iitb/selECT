@@ -47,9 +47,25 @@ const SelectionGrid = ({
                   className="w-full h-48 sm:h-56 object-cover"
                 />
               )}
+              {/* <div className="flex-1">
+                <div className="font-medium text-gray-900 text-sm sm:text-base">
+                  {opt.label}
+                </div>
+                {opt.description && (
+                  <div className="text-xs sm:text-sm text-gray-600 mt-1">
+                    {opt.description}
+                  </div>
+                )}
+              </div> */}
+
               <div className="flex-1">
                 <div className="font-medium text-gray-900 text-sm sm:text-base">
                   {opt.label}
+                  {opt.disabled && (
+                    <p className="text-xs text-gray-500 font-normal ">
+                      Coming Soon
+                    </p>
+                  )}
                 </div>
                 {opt.description && (
                   <div className="text-xs sm:text-sm text-gray-600 mt-1">
