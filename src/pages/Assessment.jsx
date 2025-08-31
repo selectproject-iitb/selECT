@@ -122,17 +122,17 @@ const Assessment = () => {
   const selectionOptions = {
     subject: [
       { value: "Science", label: "Science" },
-      { value: "Math", label: "Math (Coming Soon)", disabled: true },
-      { value: "English", label: "English (Coming Soon)", disabled: true },
+      { value: "Math", label: "Math", disabled: true },
+      { value: "English", label: "English", disabled: true },
     ],
     grade: [
       { value: "6-8", label: "6 - 8" },
       { value: "9-10", label: "9 - 10" },
-      { value: "11-12", label: "11 - 12 (Coming Soon)", disabled: true },
+      { value: "11-12", label: "11 - 12", disabled: true },
     ],
     language: [
       { value: "English", label: "English" },
-      { value: "Bilingual", label: "Bilingual (Coming Soon)", disabled: true },
+      { value: "Bilingual", label: "Bilingual", disabled: true },
     ],
     technology: [
       {
