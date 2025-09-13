@@ -18,7 +18,6 @@ export const SocketProvider = ({ children }) => {
 
       if (socket) {
         socket.on("connect", () => {
-          console.log("Socket connected successfully");
           setIsConnected(true);
 
           if (user.role === "admin") {
