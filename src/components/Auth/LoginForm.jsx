@@ -79,9 +79,22 @@ const LoginForm = ({ onSwitchToSignup, isAdmin = false }) => {
 
     try {
       await login(loginData, isAdmin);
-      const from =
-        location.state?.from?.pathname || (isAdmin ? "/admin/dashboard" : "/");
-      navigate(from, { replace: true });
+      const redirectPath = location.state?.from?.pathname;
+      let targetPath;
+      if (
+        redirectPath &&
+        redirectPath !== "/login" &&
+        redirectPath !== "/admin/login"
+      ) {
+        targetPath = redirectPath;
+      } else if (isAdmin) {
+        targetPath = "/admin/dashboard";
+      } else {
+        targetPath = "/";
+      }
+      setTimeout(() => {
+        navigate(targetPath, { replace: true });
+      }, 1000);
     } catch (error) {
       // Error is handled in the auth context
     }
