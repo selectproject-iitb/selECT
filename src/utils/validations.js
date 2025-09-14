@@ -15,15 +15,15 @@ export const validateMobile = (mobile) => {
 };
 
 // Password validation
-export const validatePassword = (password) => {
-  const regex =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
-  if (!password) return "Password is required";
-  if (!regex.test(password)) {
-    return "Password must be at least 6 characters, include uppercase, lowercase, number & special character";
-  }
-  return null;
-};
+// export const validatePassword = (password) => {
+//   const regex =
+//     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+//   if (!password) return "Password is required";
+//   if (!regex.test(password)) {
+//     return "Password must be at least 6 characters, include uppercase, lowercase, number & special character";
+//   }
+//   return null;
+// };
 
 // Confirm Password validation
 export const validateConfirmPassword = (password, confirmPassword) => {
