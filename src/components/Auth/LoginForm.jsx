@@ -3,7 +3,10 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Button from "../UI/Button";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { validateEmail, validatePassword } from "../../utils/validations";
+import {
+  validateEmail,
+  // validatePassword
+} from "../../utils/validations";
 
 const LoginForm = ({ onSwitchToSignup, isAdmin = false }) => {
   const navigate = useNavigate();
@@ -24,9 +27,9 @@ const LoginForm = ({ onSwitchToSignup, isAdmin = false }) => {
       case "email":
         error = validateEmail(value);
         break;
-      case "password":
-        error = validatePassword(value);
-        break;
+      // case "password":
+      //   error = validatePassword(value);
+      //   break;
       default:
         break;
     }
@@ -46,7 +49,7 @@ const LoginForm = ({ onSwitchToSignup, isAdmin = false }) => {
     newErrors.email = validateEmail(loginData.email);
     if (newErrors.email) isValid = false;
 
-    newErrors.password = validatePassword(loginData.password);
+    // newErrors.password = validatePassword(loginData.password);
     if (newErrors.password) isValid = false;
 
     setErrors(newErrors);

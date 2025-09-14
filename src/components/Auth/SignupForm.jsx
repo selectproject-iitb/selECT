@@ -6,7 +6,7 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import {
   validateEmail,
   validateMobile,
-  validatePassword,
+  // validatePassword,
   validateConfirmPassword,
 } from "../../utils/validations";
 
@@ -74,9 +74,9 @@ const SignupForm = ({ onSwitchToLogin, isAdmin = false }) => {
       case "contactNumber":
         error = validateMobile(value);
         break;
-      case "password":
-        error = validatePassword(value);
-        break;
+      // case "password":
+      //   error = validatePassword(value);
+      //   break;
       case "confirmPassword":
         error = validateConfirmPassword(value, signupData.password);
         break;
@@ -104,7 +104,7 @@ const SignupForm = ({ onSwitchToLogin, isAdmin = false }) => {
       if (newErrors.contactNumber) isValid = false;
     }
 
-    newErrors.password = validatePassword(signupData.password);
+    // newErrors.password = validatePassword(signupData.password);
     if (newErrors.password) isValid = false;
 
     newErrors.confirmPassword = validateConfirmPassword(
