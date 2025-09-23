@@ -12,9 +12,7 @@ const OverviewVideosSection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           <div className="text-center p-5 sm:p-6">
-            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
-              Video 1
-            </h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4"></h3>
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-3 sm:mb-4">
               <video
                 className="w-full h-full"
@@ -24,9 +22,7 @@ const OverviewVideosSection = () => {
             </div>
           </div>
           <div className="text-center p-5 sm:p-6">
-            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
-              Video 2
-            </h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4"></h3>
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-3 sm:mb-4">
               <video
                 className="w-full h-full"

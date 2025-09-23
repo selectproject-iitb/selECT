@@ -98,7 +98,7 @@ const DetailedReportModal = ({ open, onClose, video }) => {
                         </div>
                         <div className="text-right">
                           <span className="text-lg font-semibold text-gray-900">
-                            {score} pts
+                            {score}
                           </span>
                         </div>
                       </div>
