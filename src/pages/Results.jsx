@@ -90,7 +90,7 @@ const Results = () => {
       console.error("Failed to track restart:", error);
     }
     reset();
-    navigate("/");
+    navigate("/assess");
   };
 
   React.useEffect(() => {

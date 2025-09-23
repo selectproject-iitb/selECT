@@ -59,7 +59,7 @@ const DetailModal = ({ open, onClose, currentVideo, currentVideoIndex }) => {
                   </div>
                   <div className="text-left sm:text-right">
                     <div className="font-semibold text-sm sm:text-base">
-                      {score} pts
+                      {score}
                     </div>
                   </div>
                 </div>
